@@ -15,7 +15,6 @@ int main() {
     // (int *) es un 'cast' para indicar que la memoria asignada será tratada como un puntero a entero.
     arr = (int *) malloc(n * sizeof(int));
 
-    // Verificar si la asignacion de memoria fue exitosa
     // Si malloc no puede asignar la memoria, devuelve NULL. Es crucial verificar esto.
     if (arr == NULL) {
         printf("Error: No se pudo asignar memoria.\n");
@@ -38,6 +37,6 @@ int main() {
     }
     free(arr);
     printf("Memoria liberada.\n");
-
-    return 0; // Terminación exitosa del programa
+    printf("Programa finalizado y memoria liberada.\n");
+    // Terminación exitosa del programa
 }
